@@ -25,13 +25,13 @@ const ITEMS_PER_PAGE = 5
 
 export default function Inventory() {
   const [products, setProducts] = useState<Product[]>([
-    { id: 1, name: "Laptop", category: "Electronics", price: 999.99, stock: 50 },
-    { id: 2, name: "Smartphone", category: "Electronics", price: 699.99, stock: 100 },
-    { id: 3, name: "Headphones", category: "Audio", price: 149.99, stock: 200 },
-    { id: 4, name: "Mouse", category: "Accessories", price: 29.99, stock: 300 },
-    { id: 5, name: "Keyboard", category: "Accessories", price: 59.99, stock: 150 },
-    { id: 6, name: "Monitor", category: "Electronics", price: 299.99, stock: 75 },
-    { id: 7, name: "Tablet", category: "Electronics", price: 399.99, stock: 80 },
+    { id: 1, name: "Peanut", category: "whole food", price: 999.99, stock: 50 },
+    { id: 2, name: "Item B", category: "snacks", price: 699.99, stock: 100 },
+    { id: 3, name: "Item C", category: "snacks", price: 149.99, stock: 200 },
+    { id: 4, name: "Benel garri", category: "whole food", price: 29.99, stock: 300 },
+    { id: 5, name: "Date jam", category: "whole food", price: 59.99, stock: 150 },
+    { id: 6, name: "Item G", category: "snacks", price: 299.99, stock: 75 },
+    { id: 7, name: "Item F", category: "snacks", price: 399.99, stock: 80 },
   ])
 
   const [currentPage, setCurrentPage] = useState(1)
