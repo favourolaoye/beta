@@ -27,7 +27,7 @@ export function Sidebar() {
       >
         {/* Title with Beta tag */}
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-2xl font-bold">CMS</h1>
+          <h1 className="text-2xl font-bold">ERP</h1>
           <span className="bg-blue-500 text-xs font-semibold px-2 py-1 rounded-full">Beta</span>
         </div>
 
