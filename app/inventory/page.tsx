@@ -24,7 +24,7 @@ interface Product {
 const ITEMS_PER_PAGE = 5
 
 export default function Inventory() {
-  const [products, setProducts] = useState<Product[]>([
+  const [products] = useState<Product[]>([
     { id: 1, name: "Peanut", category: "whole food", price: 999.99, stock: 50 },
     { id: 2, name: "Item B", category: "snacks", price: 699.99, stock: 100 },
     { id: 3, name: "Item C", category: "snacks", price: 149.99, stock: 200 },
