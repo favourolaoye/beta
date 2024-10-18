@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Home, Users, Settings, HelpCircle, Menu, X, LogOut } from "lucide-react"
+import { Home, Users, Settings, HelpCircle, Menu, X, LogOut, ShoppingBag, Logs } from "lucide-react"
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,32 +36,32 @@ export function Sidebar() {
             <li>
               <Link href="/" className="flex items-center p-2 rounded-md hover:bg-gray-700">
                 <Home className="mr-3" size={20} />
-                <span>Home</span>
+                <span className="text-sm">Home</span>
               </Link>
             </li>
             <li>
-              <Link href="/users" className="flex items-center p-2 rounded-md hover:bg-gray-700">
-                <Users className="mr-3" size={20} />
-                <span>Users</span>
+              <Link href="/inventory" className="flex items-center p-2 rounded-md hover:bg-gray-700">
+                <ShoppingBag className="mr-3" size={20} />
+                <span className="text-sm">Inventory</span>
               </Link>
             </li>
             <li>
               <Link href="/orders" className="flex items-center p-2 rounded-md hover:bg-gray-700">
-                <Settings className="mr-3" size={20} />
-                <span>Manage Orders</span>
+                <Logs className="mr-3" size={20} />
+                <span className="text-sm">Manage Orders</span>
               </Link>
             </li>
             <li>
-              <Link href="/help" className="flex items-center p-2 rounded-md hover:bg-gray-700">
+              <Link href="/guides" className="flex items-center p-2 rounded-md hover:bg-gray-700">
                 <HelpCircle className="mr-3" size={20} />
-                <span>Help</span>
+                <span className="text-sm">How-to</span>
               </Link>
             </li>
           </ul>
         </nav>
 
         {/* Logout button */}
-        <button className="flex items-center p-2 rounded-md hover:bg-gray-700 mt-auto">
+        <button className="flex items-center p-2 rounded-md hover:bg-gray-700 mt-auto text-red-400">
           <LogOut className="mr-3" size={20} />
           <span>Logout</span>
         </button>
